@@ -1,3 +1,546 @@
-Research Interests:
-  Deep learning and its applications in NLP, vision, graphs, and drug/material discovery
 
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Shengchao Liu</title>
+    <meta name="description" content="personal website">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="https://chao1224.github.io/">
+
+
+    <!---- This is for adding MathJax  ----->
+    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            TeX: {
+                equationNumbers: {
+                    autoNumber: "AMS"
+                }
+            },
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'] ],
+                processEscapes: true
+            }
+        });
+    </script>
+    <script type="text/javascript"
+            src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
+    
+    <!-- https://www.freecodecamp.org/chinese/news/html-button-onclick-javascript-click-event-tutorial/ -->
+    <!-- https://juejin.cn/s/html%20tab%E6%A0%B7%E5%BC%8F -->
+    <script type="text/javascript">
+        function openTab(event, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].classList.remove("show");
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].classList.remove("active");
+        }
+        document.getElementById(tabName).classList.add("show");
+        event.currentTarget.classList.add("active");
+        }
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) { 
+            document.getElementById("InitialButton").click();
+        });
+    </script>
+
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Shengchao Liu</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        <!-- <a class="page-link" href="/blog/">Blog</a> -->
+        <a class="page-link" href="/publications/">Publications</a>
+        <a class="page-link" href="/talks/">Talks</a>
+        <a class="page-link" href="/group/">Group</a>
+        <a class="page-link" href="/experiences/">Experiences</a>
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <p><img align="right" style="float:center;padding:10px;" width="30%" src="/assets/Avatar.jpg" /></p>
+
+<p>I am a joint postdoc at UC Berkeley &amp; Caltech, working with <a href="http://jenniferchayes.com/">Prof. Jennifer Chayes</a>, <a href="http://christianborgs.com/">Prof. Christian Borgs</a>, and <a href="http://tensorlab.cms.caltech.edu/users/anima/">Prof. Anima Anandkumar</a>. Meanwhile, I have close collaboration with <a href="https://uniweb.uottawa.ca/members/4499/profile?embed=2">Prof. Hongyu Guo</a> from NRC.</p>
+
+<p>I got my CS Ph.D. degree with at <a href="https://mila.quebec/en/">Quebec Artificial Intelligence Institute (AKA Mila)</a> and Université de Montréal, advised by <a href="https://jian-tang.com/">Prof. Jian Tang</a>.</p>
+
+<p>I got my CS master’s degree from University of Wisconsin-Madison, and was the <a href="https://morgridge.org/profile/shengchao-liu/">graduate researcher at Morgridge Institute for Research</a>.
+During my stay in UW-Madison, I started my first research project and was fortunately advised by <a href="https://www.biostat.wisc.edu/~gitter/">Prof. Anthony Gitter</a>, <a href="http://pages.cs.wisc.edu/~yliang/">Prof. Yingyu Liang</a>, and <a href="http://papail.io/">Prof. Dimitris Papailiopoulos</a>.
+Proir to that, I got my bachelor’s degree from Shandong University.</p>
+
+<p><strong>E-Mail</strong>: shengchao1224 at gmail dot com</p>
+
+<details>
+<summary>I also want to share some inspiring research values (special thanks to <a href="https://wyliu.com/">Weiyang</a>)</summary>
+<ul>
+    <li>
+        Focus on creating novel ideas, not publishing papers
+    </li>
+    <li>
+        Follow curiosity and passion, not trends
+    </li>
+    <li>
+        Ideas are not owned, but come with debts to those who came before
+    </li>
+    <li>
+        Ideas become stronger when shared, discussed and criticized
+    </li>
+    <li>
+        Life is surprisingly short, so solve problems that interest and excite you most
+    </li>
+    <li>
+        <a href="https://www.youtube.com/watch?v=7H2YvxefFro">It is good to be quick, but it is more important to be deep</a>
+    </li>
+    <li>
+        <a href="https://www.youtube.com/watch?v=0B9hhOTYa_I">Think like an amateur, do as an expert</a>
+    </li>
+    <li>
+        <a href="https://www.youtube.com/watch?v=ji5_MqicxSo">Last lecture</a> by Prof. Randy Pausch
+    </li>
+    <li>
+        [My research motto] Get to know me through my work!
+    </li>
+</ul>
+</details>
+<p><br /></p>
+
+<h2 id="selected-publications"><strong>Selected Publications</strong></h2>
+
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'tab1')" id="InitialButton">LLM for Molecule</button>
+  <button class="tablinks" onclick="openTab(event, 'tab2')">AI for Molecule</button>
+  <button class="tablinks" onclick="openTab(event, 'tab3')">AI and Physics</button>
+  <button class="tablinks" onclick="openTab(event, 'tab4')">Transfer Learning</button>
+  <button class="tablinks" onclick="openTab(event, 'tab5')">Representation Learning</button>
+</div>
+
+<div id="tab1" class="tabcontent">
+<ul class="space_list">
+<li>
+    <b>ChatDrug:</b> ChatGPT-powered Conversational Drug Editing Using Retrieval and Domain Feedback<br />
+    <i>Shengchao Liu<sup>&#42;</sup>, Jiongxiao Wang<sup>&#42;</sup>, Yijin Yang, Chengpeng Wang, Ling Liu, Hongyu Guo, Chaowei Xiao</i><br />
+    ICLR 2024<br />
+    [<a href="https://openreview.net/forum?id=yRrPfKyJQ2">Paper</a>]
+    [<a href="https://arxiv.org/abs/2305.18090">Arxiv</a>]
+    [<a href="/ChatDrug">Project Page</a>]
+    [<a href="https://github.com/chao1224/ChatDrug">Code</a>]<br />
+    [<a href="https://syns-ml.github.io/2023/contributions">ICML SynS and ML Workshop 2023 <span style="color:blue"><b>Oral</b></span></a>]
+</li>
+<li>
+    <b>ChatPathway:</b> Conversational Large Language Models for Biology Pathway Detection<br />
+    <i>Yanjing Li, Hannan Xu, Haiteng Zhao, Hongyu Guo, Shengchao Liu</i><br />
+    [<a bref="https://openreview.net/forum?id=7xlWBzaeJN">Arxiv</a>]<br />
+    [<a href="https://glfrontiers.github.io">NeurIPS GLFrontiers Workshop 2023 <span style="color:blue"><b>Oral</b></span></a>]
+</li>
+<li>
+    <b>ProteinDT:</b> A Text-guided Protein Design Framework<br />
+    <i>Shengchao Liu, Yanjing Li, Zhuoxinran Li, Anthony Gitter, Yutao Zhu, Jiarui Lu, Zhao Xu, Weili Nie, Arvind Ramanathan, Chaowei Xiao<sup>&#42;</sup>, Jian Tang<sup>&#42;</sup>, Hongyu Guo<sup>&#42;</sup>, Anima Anandkumar<sup>&#42;</sup></i><br />
+    [<a href="https://arxiv.org/abs/2302.04611">Arxiv</a>]
+    [<a href="/ProteinDT">Project Page</a>]
+    [<a href="https://github.com/chao1224/ProteinDT">Code</a>]
+</li>
+<li>
+    <b>MoleculeSTM:</b> Multi-modal Molecule Structure-text Model for Text-based Editing and Retrieval<br />
+    <i>Shengchao Liu, Weili Nie, Chengpeng Wang, Jiarui Lu, Zhuoran Qiao, Ling Liu, Jian Tang, Chaowei Xiao, Anima Anandkumar</i><br />
+    Nature Machine Intelligence 2023<br />
+    [<a href="https://www.nature.com/articles/s42256-023-00759-6">Paper</a>]
+    [<a href="https://arxiv.org/abs/2212.10789">Arxiv</a>]
+    [<a href="/MoleculeSTM">Project Page</a>]
+    [<a href="https://github.com/chao1224/MoleculeSTM">Code</a>]<br />
+    [<a href="https://neurips.cc/virtual/2022/workshop/50019">NeurIPS AI4Science Workshop 2022</a>]
+</li>
+</ul>
+</div>
+
+<div id="tab2" class="tabcontent">
+<ul class="space_list">
+<li>
+    <b>NucleusDiff:</b> Manifold-Constrained Nucleus-Level Denoising Diffusion Model for Structure-Based Drug Design<br />
+    <i>Shengchao Liu<sup>&#42;</sup>, Divin Yan<sup>&#42;</sup>, Weitao Du, Weiyang Liu, Hongyu Guo, Christian Borgs<sup>&#42;</sup>, Jennifer Chayes<sup>&#42;</sup>, Anima Anandkumar<sup>&#42;</sup></i><br />
+    [<a href="https://yanliang3612.github.io/NucleusDiff/">Project Page</a>]<br />
+    [<a href="https://openreview.net/forum?id=tmUsGCMX8w">ICML GRaM Workshop 2024</a>]
+</li>
+<li>
+    <b>CrystalFlow:</b> An Equivariant Flow Matching Framework for Learning Molecular Crystallization<br />
+    <i>Shengchao Liu, Divin Yan, Hongyu Guo<sup>&#42;</sup>, Anima Anandkumar<sup>&#42;</sup></i><br />
+    <!-- [<a href="/CrystalFlow">Project Page</a>] -->
+    [<a href="">ICML ML4LMS Workshop 2024</a>]
+    [<a href="https://openreview.net/forum?id=lCVqpQvr4l">ICML GRaM Workshop 2024</a>]
+</li>
+<li>
+    <b>NeuralMD:</b> A Multi-Grained Symmetric Differential Equation Model for Learning Protein-Ligand Binding Dynamics<br />
+    <i>Shengchao Liu<sup>&#42;</sup>, Weitao Du<sup>&#42;</sup>, Yanjing Li, Zhuoxinran Li, Vignesh Bhethanabotla, Nakul Rampal, Omar Yaghi, Christian Borgs, Anima Anandkumar<sup>&#42;</sup>, Hongyu Guo<sup>&#42;</sup>, Jennifer Chayes<sup>&#42;</sup></i><br />
+    [<a href="https://arxiv.org/abs/2401.15122">Arxiv</a>]
+    [<a href="/NeuralMD">Project Page</a>]
+    [<a href="https://github.com/chao1224/Geom3D">Code</a>]<br />
+    [<a href="https://ai4diffeqtnsinsci.github.io/">ICLR AI4DifferentialEquations Workshop 2024 <span style="color:blue"><b>Oral</b></span></a>]
+</li>
+<li>
+    <b>GraphCG:</b> Unsupervised Discovery of Steerable Factors When Graph Deep Generative Models Are Entangled<br />
+    <i>Shengchao Liu, Chengpeng Wang, Jiarui Lu, Weili Nie, Hanchen Wang, Zuoxinran Li, Bolei Zhou, Jian Tang</i><br />
+    TMLR 2024<br />
+    [<a href="https://openreview.net/forum?id=wyU3Q4gahM">Paper</a>]
+    [<a href="https://arxiv.org/abs/2401.17123">Arxiv</a>]
+    [<a href="/GraphCG">Project Page</a>]
+    [<a href="https://github.com/chao1224/GraphCG">Code</a>]<br />
+    [<a href="https://openreview.net/forum?id=BhR44NzeK_1">NeurIPS GLFrontiers Workshop 2022 <span style="color:blue"><b>Oral</b></span></a>]
+</li>
+</ul>
+</div>
+
+<div id="tab3" class="tabcontent" style="li {margin: 10px 0;}">
+<ul class="space_list">
+<li>
+    <b>CrystalFlow:</b> An Equivariant Flow Matching Framework for Learning Molecular Crystallization<br />
+    <i>Shengchao Liu, Divin Yan, Hongyu Guo<sup>&#42;</sup>, Anima Anandkumar<sup>&#42;</sup></i><br />
+    <!-- [<a href="/CrystalFlow">Project Page</a>] -->
+    [<a href="">ICML ML4LMS Workshop 2024</a>]
+    [<a href="https://openreview.net/forum?id=lCVqpQvr4l">ICML GRaM Workshop 2024</a>]
+</li>
+<li>
+    <b>NeuralMD:</b> A Multi-Grained Symmetric Differential Equation Model for Learning Protein-Ligand Binding Dynamics<br />
+    <i>Shengchao Liu<sup>&#42;</sup>, Weitao Du<sup>&#42;</sup>, Yanjing Li, Zhuoxinran Li, Vignesh Bhethanabotla, Nakul Rampal, Omar Yaghi, Christian Borgs, Anima Anandkumar<sup>&#42;</sup>, Hongyu Guo<sup>&#42;</sup>, Jennifer Chayes<sup>&#42;</sup></i><br />
+    [<a href="https://arxiv.org/abs/2401.15122">Arxiv</a>]
+    [<a href="/NeuralMD">Project Page</a>]
+    [<a href="https://github.com/chao1224/Geom3D">Code</a>]<br />
+    [<a href="https://ai4diffeqtnsinsci.github.io/">ICLR AI4DifferentialEquations Workshop 2024 <span style="color:blue"><b>Oral</b></span></a>]
+</li>
+<li>
+    <b>MoleculeSDE:</b> A Group Symmetric Stochastic Differential Equation Model for Molecule Multi-modal Pretraining<br />
+    <i>Shengchao Liu<sup>&#42;</sup>, Weitao Du<sup>&#42;</sup>, Zhiming Ma, Hongyu Guo, Jian Tang</i><br />
+    ICML 2023<br />
+    [<a href="https://proceedings.mlr.press/v202/liu23h.html">Paper</a>]
+    [<a href="http://arxiv.org/abs/2305.18407">Arxiv</a>]
+    [<a href="/MoleculeSDE">Project Page</a>]
+    [<a href="https://github.com/chao1224/MoleculeSDE">Code</a>]
+</li>
+<li>
+    Bad Global Minima Exist and SGD Can Reach Them<br />
+    <i>Shengchao Liu, Dimitris Papailiopoulos, Dimitris Achlioptas</i><br />
+    NeurIPS 2020<br />
+    [<a href="https://proceedings.neurips.cc/paper/2020/hash/618491e20a9b686b79e158c293ab4f91-Abstract.html">Paper</a>]
+    [<a href="https://github.com/chao1224/BadGlobalMinima">Code</a>]
+    [<a href="https://studio.slideslive.com/web_recorder/share/20201117T232546Z__NeurIPS_posters__19075__explicit-regularization-is-str?s=b1c1c07b-7c8a-4995-9e0a-e25e1a05f86d">Video, NeurIPS 2020</a>]<br />
+    [<a href="https://youtube.videoken.com/embed/NJjqOnuvpKc?tocitem=17">ICML Deep Learning Phenomena Workshop 2019 <span style="color:blue"><b>Oral</b></span></a>]
+</li>
+</ul>
+</div>
+
+<div id="tab4" class="tabcontent">
+<ul class="space_list">
+<li>
+    <b>MoleculeJAE:</b> Molecule Joint Auto-Encoding: Trajectory Pretraining with 2D and 3D Diffusion<br />
+    <i>Weitao Du, Jiujiu Chen, Xuecang Zhang, Zhiming Ma, Shengchao Liu</i><br />
+    NeurIPS 2023<br />
+    [<a href="https://openreview.net/forum?id=xzmaFfw6oh">Paper</a>]
+    [<a href="https://arxiv.org/abs/2312.03475">Arxiv</a>]
+    [<a href="https://github.com/chao1224/Geom3D">Code</a>]
+</li>
+<li>
+    <b>MoleculeSDE:</b> A Group Symmetric Stochastic Differential Equation Model for Molecule Multi-modal Pretraining<br />
+    <i>Shengchao Liu<sup>&#42;</sup>, Weitao Du<sup>&#42;</sup>, Zhiming Ma, Hongyu Guo, Jian Tang</i><br />
+    ICML 2023<br />
+    [<a href="https://proceedings.mlr.press/v202/liu23h.html">Paper</a>]
+    [<a href="http://arxiv.org/abs/2305.18407">Arxiv</a>]
+    [<a href="/MoleculeSDE">Project Page</a>]
+    [<a href="https://github.com/chao1224/MoleculeSDE">Code</a>]
+</li>
+<li>
+    <b>GeoSSL:</b> Molecular Geometry Pretraining with SE(3)-Invariant Denoising Distance Matching<br />
+    <i>Shengchao Liu, Hongyu Guo, Jian Tang</i><br />
+    ICLR 2023<br />
+    [<a href="https://openreview.net/forum?id=CjTHVo1dvR">Paper</a>]
+    [<a href="https://arxiv.org/abs/2206.13602">Arxiv</a>]
+    [<a href="/GeoSSL">Project Page</a>]
+    [<a href="https://github.com/chao1224/GeoSSL">Code</a>]
+</li>
+<li>
+    <b>GraphMVP:</b> Pre-training Molecular Graph Representation with 3D Geometry<br />
+    <i>Shengchao Liu, Hanchen Wang, Weiyang Liu, Joan Lasenby, Hongyu Guo, Jian Tang</i><br />
+    ICLR 2022<br />
+    [<a href="https://openreview.net/forum?id=xQUe1pOKPam">Paper</a>]
+    [<a href="https://arxiv.org/abs/2110.07728">Arxiv</a>]
+    [<a href="/GraphMVP">Project Page</a>]
+    [<a href="https://github.com/chao1224/GraphMVP">Code</a>]<br />
+    [<a href="https://sslneurips21.github.io">NeurIPS SSL Workshop 2021</a>]<br />
+    [<a href="https://gt-rl.github.io">ICLR GTRL Workshop 2022 <span style="color:blue"><b>Spotlight</b></span></a>]
+</li>
+<li>
+    <b>SGNN-EBM:</b> Structured Multi-task Learning for Molecular Property Prediction<br />
+    <i>Shengchao Liu, Meng Qu, Zuobai Zhang, Huiyu Cai, Jian Tang</i><br />
+    AISTATS 2022<br />
+    [<a href="https://proceedings.mlr.press/v151/liu22e.html">Paper</a>]
+    [<a href="https://arxiv.org/abs/2203.04695">Arxiv</a>]
+    [<a href="/SGNN-EBM">Project Page</a>]
+    [<a href="https://github.com/chao1224/SGNN-EBM">Code</a>]<br />
+    [<a href="https://openreview.net/forum?id=6cWgY5Epwzo">NeurIPS AI4Science Workshop 2021</a>]
+</li>
+<li>
+    <b>LBTW:</b> Loss-Balanced Task Weighting to Reduce Negative Transfer in Multi-Task Learning<br />
+    <i>Shengchao Liu, Yingyu Liang, Anthony Gitter</i><br />
+    AAAI-Student Abstract 2019<br />
+    [<a href="https://aaai.org/ojs/index.php/AAAI/article/view/5125">Paper</a>]
+    [<a href="https://figshare.com/articles/Appendix_Loss-Balanced_Task_Weighting_to_Reduce_Negative_Transfer_in_Multi-Task_Learning/7732964">Appendix</a>]
+    [<a href="https://github.com/chao1224/Loss-Balanced-Task-Weightning">Code</a>]
+</li>
+</ul>
+</div>
+
+<div id="tab5" class="tabcontent">
+<ul class="space_list">
+<li>
+    <b>Geom3D:</b> Symmetry-Informed Geometric Representation for Molecules, Proteins, and Crystalline Materials<br />
+    <i>Shengchao Liu, Weitao Du, Yanjing Li, Zhuoxinran Li, Zhiling Zheng, Chenru Duan, Zhiming Ma, Omar Yaghi, Anima Anandkumar, Christian Borgs, Jennifer Chayes, Hongyu Guo, Jian Tang</i><br />
+    NeurIPS Datasets and Benchmarks 2023<br />
+    [<a href="https://openreview.net/forum?id=ygXSNrIU1p&amp;referrer">Paper</a>]
+    [<a href="https://arxiv.org/abs/2306.09375">Arxiv</a>]
+    [<a href="https://github.com/chao1224/Geom3D">Code</a>]
+</li>
+<li>
+    <b>GraphMVP:</b> Pre-training Molecular Graph Representation with 3D Geometry<br />
+    <i>Shengchao Liu, Hanchen Wang, Weiyang Liu, Joan Lasenby, Hongyu Guo, Jian Tang</i><br />
+    ICLR 2022<br />
+    [<a href="https://openreview.net/forum?id=xQUe1pOKPam">Paper</a>]
+    [<a href="https://arxiv.org/abs/2110.07728">Arxiv</a>]
+    [<a href="/GraphMVP">Project Page</a>]
+    [<a href="https://github.com/chao1224/GraphMVP">Code</a>]<br />
+    [<a href="https://sslneurips21.github.io">NeurIPS SSL Workshop 2021</a>]<br />
+    [<a href="https://gt-rl.github.io">ICLR GTRL Workshop 2022 <span style="color:blue"><b>Spotlight</b></span></a>]
+</li>
+<li>
+    <b>AWARE:</b> Attentive Walk-Aggregating Graph Neural Networks<br />
+    <i>Mehmet F. Demirel, Shengchao Liu, Siddhant Garg, Zhenmei Shi, Yingyu Liang</i><br />
+    TMLR 2022<br />
+    [<a href="https://openreview.net/forum?id=TWSTyYd2Rl">Paper</a>]
+    [<a href="https://arxiv.org/abs/2110.02667">Arxiv</a>]
+    [<a href="https://github.com/mehmetfdemirel/aware">Code</a>]
+</li>
+<li>
+    <b>N-Gram Graph:</b> Simple Unsupervised Representation for Graphs, with Applications to Molecules<br />
+    <i>Shengchao Liu, Mehmet Furkan Demirel, Yingyu Liang</i><br />
+    NeurIPS 2019 <span style="color:red"><b>Spotlight</b></span><br />
+    [<a href="https://proceedings.neurips.cc/paper/2019/hash/2f3926f0a9613f3c3cc21d52a3cdb4d9-Abstract.html">Paper</a>]
+    [<a href="https://arxiv.org/abs/1806.09206">Arxiv</a>]
+    [<a href="https://github.com/chao1224/n_gram_graph">Code</a>]<br />
+    [<a href="http://www.quantum-machine.org/workshops/nips2018">NeurIPS MLMM Workshop 2018</a>]
+</li>
+</ul>
+</div>
+
+<!-- 
+### **Molecular Dynamics and Learning Dynamics**
+
++ **NeuralMD:** A Multi-Grained Symmetric Differential Equation Model for Learning Protein-Ligand Binding Dynamics<br>
+*Shengchao Liu<sup>&#42;</sup>, Weitao Du<sup>&#42;</sup>, Yanjing Li, Zhuoxinran Li, Vignesh Bhethanabotla, Nakul Rampal, Omar Yaghi, Christian Borgs, Anima Anandkumar<sup>&#42;</sup>, Hongyu Guo<sup>&#42;</sup>, Jennifer Chayes<sup>&#42;</sup>*<br>
+[[Arxiv](https://arxiv.org/abs/2401.15122)] [[Project Page](/NeuralMD)] [[Code](https://github.com/chao1224/Geom3D)]<br>
+[[ICLR AI4DifferentialEquations Workshop 2024 <span style="color:blue"><b>Oral</b></span>](https://ai4diffeqtnsinsci.github.io/)]
+
++ Bad Global Minima Exist and SGD Can Reach Them<br>
+*Shengchao Liu, Dimitris Papailiopoulos, Dimitris Achlioptas*<br>
+NeurIPS 2020<br>
+[[Paper](https://proceedings.neurips.cc/paper/2020/hash/618491e20a9b686b79e158c293ab4f91-Abstract.html)] [[Code](https://github.com/chao1224/BadGlobalMinima)] [[Slides]()] [[Poster](/material/NeurIPS2020_Bad_Global_Minima_Poster.pdf)] [[Video/Audio, NeurIPS 2020](https://studio.slideslive.com/web_recorder/share/20201117T232546Z__NeurIPS_posters__19075__explicit-regularization-is-str?s=b1c1c07b-7c8a-4995-9e0a-e25e1a05f86d)]<br>
+[[ICML Deep Learning Phenomena Workshop 2019 <span style="color:blue"><b>Oral</b></span>](https://youtube.videoken.com/embed/NJjqOnuvpKc?tocitem=17)] 
+
+### **LLM for Molecule Design**
+
++ **ChatDrug:** ChatGPT-powered Conversational Drug Editing Using Retrieval and Domain Feedback<br>
+*Shengchao Liu<sup>&#42;</sup>, Jiongxiao Wang<sup>&#42;</sup>, Yijin Yang, Chengpeng Wang, Ling Liu, Hongyu Guo, Chaowei Xiao*<br>
+ICLR 2024<br>
+[[Paper](https://openreview.net/forum?id=yRrPfKyJQ2)] [[Project Page](/ChatDrug)] [[ArXiv](https://arxiv.org/abs/2305.18090)] [[Code](https://github.com/chao1224/ChatDrug)]<br>
+[[ICML SynS and ML Workshop 2023 <span style="color:blue"><b>Oral</b></span>](https://syns-ml.github.io/2023/contributions/)]
+
++ **ProteinDT:** A Text-guided Protein Design Framework<br>
+*Shengchao Liu, Yanjing Li, Zhuoxinran Li, Anthony Gitter, Yutao Zhu, Jiarui Lu, Zhao Xu, Weili Nie, Arvind Ramanathan, Chaowei Xiao<sup>&#42;</sup>, Jian Tang<sup>&#42;</sup>, Hongyu Guo<sup>&#42;</sup>, Anima Anandkumar<sup>&#42;</sup>*<br>
+[[Project Page](/ProteinDT)] [[ArXiv](https://arxiv.org/abs/2302.04611)] [[Code](https://github.com/chao1224/ProteinDT)]
+
++ **MoleculeSTM:** Multi-modal Molecule Structure-text Model for Text-based Editing and Retrieval<br>
+*Shengchao Liu, Weili Nie, Chengpeng Wang, Jiarui Lu, Zhuoran Qiao, Ling Liu, Jian Tang, Chaowei Xiao, Anima Anandkumar*<br>
+Nature Machine Intelligence 2023<br>
+[[Paper](https://www.nature.com/articles/s42256-023-00759-6)] [[Project Page](/MoleculeSTM)] [[ArXiv](https://arxiv.org/abs/2212.10789)] [[Code](https://github.com/chao1224/MoleculeSTM)]<br>
+[[NeurIPS AI4Science Workshop 2022](https://neurips.cc/virtual/2022/workshop/50019)]
+
++ **GraphCG:** Unsupervised Discovery of Steerable Factors When Graph Deep Generative Models Are Entangled<br>
+*Shengchao Liu, Chengpeng Wang, Jiarui Lu, Weili Nie, Hanchen Wang, Zuoxinran Li, Bolei Zhou, Jian Tang*<br>
+TMLR 2024<br>
+[[Paper](https://openreview.net/forum?id=wyU3Q4gahM)] [[Project Page](/GraphCG)] [[ArXiv](https://arxiv.org/abs/2401.17123)] [[Code](https://github.com/chao1224/GraphCG)]<br>
+[[NeurIPS GLFrontiers Workshop 2022 <span style="color:blue"><b>Oral</b></span>](https://openreview.net/forum?id=BhR44NzeK_1)]
+
+### **Transfer Learning**
+
++ **MoleculeSDE:** A Group Symmetric Stochastic Differential Equation Model for Molecule Multi-modal Pretraining<br>
+*Shengchao Liu<sup>&#42;</sup>, Weitao Du<sup>&#42;</sup>, Zhiming Ma, Hongyu Guo, Jian Tang*<br>
+ICML 2023<br>
+[[Project Page](/MoleculeSDE)] [[Paper](https://proceedings.mlr.press/v202/liu23h.html)] [[ArXiv](http://arxiv.org/abs/2305.18407)] [[Code](https://github.com/chao1224/MoleculeSDE)]
+
++ **GeoSSL:** Molecular Geometry Pretraining with SE(3)-Invariant Denoising Distance Matching<br>
+*Shengchao Liu, Hongyu Guo, Jian Tang*<br>
+ICLR 2023<br>
+[[Project Page](/GeoSSL)] [[Paper](https://openreview.net/forum?id=CjTHVo1dvR)] [[ArXiv](https://arxiv.org/abs/2206.13602)] [[Code](https://github.com/chao1224/GeoSSL)]
+
++ **GraphMVP:** Pre-training Molecular Graph Representation with 3D Geometry<br>
+*Shengchao Liu, Hanchen Wang, Weiyang Liu, Joan Lasenby, Hongyu Guo, Jian Tang*<br>
+ICLR 2022<br>
+[[Project Page](/GraphMVP)] [[Paper](https://openreview.net/forum?id=xQUe1pOKPam)] [[ArXiv](https://arxiv.org/abs/2110.07728)] [[Code](https://github.com/chao1224/GraphMVP)] [[Slides](https://drive.google.com/file/d/1-lDWtdgeEgTO009YVPzHK8f7yYbvQ1oY/view?usp=sharing)] [[Poster](https://drive.google.com/file/d/1L_XrlgfmCmycfGf47Dt6nnaKpZtiqiN-/view?usp=sharing)]<br>
+[[NeurIPS SSL Workshop 2021](https://sslneurips21.github.io/)]<br>
+[[ICLR GTRL Workshop 2022 <span style="color:blue"><b>Spotlight</b></span>](https://gt-rl.github.io/)]
+
++ **SGNN-EBM:** Structured Multi-task Learning for Molecular Property Prediction<br>
+*Shengchao Liu, Meng Qu, Zuobai Zhang, Huiyu Cai, Jian Tang*<br>
+AISTATS 2022<br>
+[[Project Page](/SGNN-EBM)] [[Paper](https://proceedings.mlr.press/v151/liu22e.html)] [[ArXiv](https://arxiv.org/abs/2203.04695)] [[Code](https://github.com/chao1224/SGNN-EBM)] [[Slides]()] [[Poster](/projects/AISTATS22_SGNN_EBM/poster.png)]<br>
+[[NeurIPS AI4Science Workshop 2021](https://openreview.net/forum?id=6cWgY5Epwzo)]
+
++ **LBTW:** Loss-Balanced Task Weighting to Reduce Negative Transfer in Multi-Task Learning<br>
+*Shengchao Liu, Yingyu Liang, Anthony Gitter*<br>
+AAAI-Student Abstract 2019<br>
+[[Paper](https://aaai.org/ojs/index.php/AAAI/article/view/5125)] [[Appendix](https://figshare.com/articles/Appendix_Loss-Balanced_Task_Weighting_to_Reduce_Negative_Transfer_in_Multi-Task_Learning/7732964)] [[Code](https://github.com/chao1224/Loss-Balanced-Task-Weightning)] [[Poster](/material/AAAI2019_LBTW_Poster.pdf)]
+
+### **Representation Learning**
+
++ **Geom3D:** Symmetry-Informed Geometric Representation for Molecules, Proteins, and Crystalline Materials<br>
+*Shengchao Liu, Weitao Du, Yanjing Li, Zhuoxinran Li, Zhiling Zheng, Chenru Duan, Zhiming Ma, Omar Yaghi, Anima Anandkumar, Christian Borgs, Jennifer Chayes, Hongyu Guo, Jian Tang*<br>
+NeurIPS Datasets and Benchmarks 2023<br>
+[[Paper](https://openreview.net/forum?id=ygXSNrIU1p&referrer)] [[ArXiv](https://arxiv.org/abs/2306.09375)] [[Code](https://github.com/chao1224/Geom3D)]
+
++ **AWARE:** Attentive Walk-Aggregating Graph Neural Networks<br>
+*Mehmet F. Demirel, Shengchao Liu, Siddhant Garg, Zhenmei Shi, Yingyu Liang*<br>
+TMLR 2022<br>
+[[Paper](https://openreview.net/forum?id=TWSTyYd2Rl)] [[ArXiv](https://arxiv.org/abs/2110.02667)] [[Code](https://github.com/mehmetfdemirel/aware)]
+
++ **N-Gram Graph:** Simple Unsupervised Representation for Graphs, with Applications to Molecules<br>
+*Shengchao Liu, Mehmet Furkan Demirel, Yingyu Liang*<br>
+NeurIPS 2019 <span style="color:red"><b>Spotlight</b></span><br>
+[[Paper](https://proceedings.neurips.cc/paper/2019/hash/2f3926f0a9613f3c3cc21d52a3cdb4d9-Abstract.html)] [[ArXiv](https://arxiv.org/abs/1806.09206)] [[Code](https://github.com/chao1224/n_gram_graph)] [[Slides](https://papers.nips.cc/paper/9054-n-gram-graph-simple-unsupervised-representation-for-graphs-with-applications-to-molecules)][[Poster](/material/NeurIPS2020_N_Gram_Graph.pdf)]<br>
+[[NeurIPS MLMM Workshop 2018](http://www.quantum-machine.org/workshops/nips2018/)] -->
+
+<!-- ## **Interests**
+
++ Coding. Like ACM-ICPC and Capture the Flag.
++ Video Editing. Quite cool stuff.
++ Reading. Novels are my favourite, but also history and computer books.
++ Music. Classical music are perfect match for coding. -->
+
+      </div>
+    </div>
+    
+   <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>Shengchao Liu</li>
+          <li><a href="mailto:liusheng at mila.quebec">liusheng at mila.quebec</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/chao1224">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                </svg>
+              </span>
+
+              <span class="username">chao1224</span>
+            </a>
+          </li>
+          
+
+
+	  
+
+          
+
+          
+          <li>
+            <a href="https://twitter.com/Shengchao_Liu">
+              <span class="icon  icon--twitter">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                                          c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+                </svg>
+              </span>
+
+              <span class="username">Shengchao_Liu</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">personal website</p>
+      </div>
+      <div class="footer-col footer-col-4">
+        <a rel="license"
+           href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative
+                                                                           Commons License" style="border-width:0"
+                                                                      src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"
+                                                                      /></a><br />Unless
+        otherwise noted, this site is licensed under a <a rel="license"
+                                                          href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+          Commons Attribution-ShareAlike 4.0 International License</a>.
+      </div>
+    </div>
+
+  </div>
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+    ga('create', 'UA-65548469-1', 'auto');
+    ga('send', 'pageview');
+    
+  </script>
+  
+</footer>
+
+
+  </body>
+
+</html>
